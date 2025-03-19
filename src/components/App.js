@@ -1,13 +1,22 @@
 import React, { useState } from "react";
-import './../styles/App.css';
+import "./../styles/App.css";
 
-const App = (props) => {
+function App() {
+    const [showPara, setShowPara] = useState(false);
 
-  return (
-    <div className="App" id="main">
-      // Do not alter the main div
-    </div>
-  );
+    return (
+        <div id="main">
+            {/* Do not alter the main div */}
+            <button id="click" onClick={() => setShowPara(!showPara)}>
+                {showPara ? "Hide Paragraph" : "Show Paragraph"}
+            </button>
+            {showPara && (
+                <p id="para" className={showPara ? "show" : "hide"}>
+                   "Life isn’t about finding yourself. Life is about creating yourself." 
+                </p>
+            )}
+        </div>
+    );
 }
 
-export default App
+export default App;

@@ -1,1 +1,46 @@
 /* Your CSS code here. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #cc27db;
+    text-align: center;
+}
+
+#main {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    box-sizing: border-box;
+    width: 150px;
+    padding: 10px;
+    height: 40px;
+    color: #fff;
+    background-color: #cc27db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #cc27db;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.bg-pink {
+    background-color: pink;
+}
